@@ -11,7 +11,7 @@
 ### Options
 - -l -> shows the result in the listing format
 - -r -> reverses the result
-- -h -> show the result along with the size of the files
+- -h -> show the result along with the size of the files  
 All the options can be combined with any of the other irrespective of the order of the combination.
 
 

@@ -60,10 +60,23 @@ Newly created and assigned aliases are only valid until shell is opened in which
 
 - __functions__ : Functions can also be built using existing commands to either create new commands, or to override commands built-in to the shell or commands stored in files. Functions are useful in running multiple commmands at a single run.
 <pre>
-    -""" my_function(){
+     my_function(){
         _cd Documents_
         _date_
         _echo "This is test for functions"_
-    }"""
+     }
 </pre>
-    after this we can always call my_function to run all the mentioned command consecutively.\\
+    after this we can always call my_function to run all the mentioned command consecutively.
+
+- __Qouting__ : Quotation marks are used throughout Linux administration and most computer programming languages to let the system know that the information contained within the quotation marks should either be ignored or treated in a way that is very different than it would normally be treated. Quotes are of following : 
+    - __Double Quoting__ : Double quotes stop the shell from interpreting some metacharacters (special characters), including glob characters.(Glob characters are special character which are perceived specially by shell e.g. *,. etc). In double quotes $ still holds the special character value.
+    - __Single Quoting__ : Single quotes prevent the shell from doing any interpreting of special characters, including globs, variables, command substitution and other metacharacters. In single quotes $ is only perceived as $ only no speciality is added with it.
+    - __Back Quotes__ : Back quotes are use to retain the special meaning of a command in the shell. e.g. _echo Hi date_ prints the same while _echo hi `date`_ print hi _todays date_.
+
+
+; can be used to run the multiple commands in a single line example : cd prince ; ls docs ; rm nitish.txt
+\ can be used with a particular metacharacter to stop it's special interpretation.
+&& perceived as in the logical manner if first command runs then second command will run or else second will not run.
+|| perceived as in the logical manner but if first command runs then second runs or else also second command will run.
+
+

@@ -15,10 +15,30 @@
 
 All the options can be combined with any of the other irrespective of the order of the combination.
 
+
 ### Variables 
 These are the features which allows the shell to store some values which in turn can be used to modify the behaviour of the command.
+- __Local Variables__ : Variable which are created and stored locally upto the runtime of command line are called local variables.e.g. - name = "prince"
+    - These variables are available only to the user through which it is created.
+
+- __Global Variables/Environment Variables__ : These vaiables are available in system wide to all over the system. Some of global variables are 
+    - _HISTSIZE_ -> shows how many previous commands to be stored in the history size.
+    - _HOME_ -> show the home directory of the user.
+    - _PATH_ -> It defines the list of directory for shell to look for commands.
+        - You can always add the custom directory to PATH variable to access the custom commands.
+_env_ shows the list of all available global variables in the system.
+- _export <variable name>_ : can be used to set a local variable as a global variable.
+- _unset <variable name>_ : can be used to remove a exported global variable from the global variable list.
 
 ## Commands
+
+
+- __type__ -> To know the type of any command : _<type command_name>_ gives the type of command_name.
+    - __Internal Commands__ : Built in command or internal commands are built in to the shell. examples - cd.
+    - __External Commands__ : These are executable binaries which are runned by the shell stored in path directories.
+_which <command_name>_ : gives the location of command in PATH variable.
+
+
 - __history__ -> this will provide with the history of the desired commands.  
     - If you find any command to be used from the hostory then you can call that by _!<command_number>_ this will run the particular command from the history table.  
     - Also to execute the nth command from the bottom you can type as _!<commmad_position>_.  
@@ -28,3 +48,4 @@ These are the features which allows the shell to store some values which in turn
 - __echo__ -> It is used to display output in the terminal. To acces a varibale in echo you can include $ sign before the variable name. e.g.
     - variable = prince
     - echo "Hello $variable" will show the result as "Hello prince".
+

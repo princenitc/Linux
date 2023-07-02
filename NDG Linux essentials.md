@@ -59,9 +59,11 @@ _which <command_name>_ : gives the location of command in PATH variable.
 Newly created and assigned aliases are only valid until shell is opened in which they are opened. If shell is closed then all the aliases temporarily created will be lost.
 
 - __functions__ : Functions can also be built using existing commands to either create new commands, or to override commands built-in to the shell or commands stored in files. Functions are useful in running multiple commmands at a single run.
+<pre>
     -""" my_function(){
         _cd Documents_
         _date_
         _echo "This is test for functions"_
     }"""
+</pre>
     after this we can always call my_function to run all the mentioned command consecutively.\\

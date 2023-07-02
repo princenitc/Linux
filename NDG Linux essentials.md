@@ -33,7 +33,7 @@ _env_ shows the list of all available global variables in the system.
 ## Commands
 
 
-- __type__ -> To know the type of any command : _<type command_name>_ gives the type of command_name.
+- __type__ -> To know the type of any command : _type <command_name>_ gives the type of command_name.
     - __Internal Commands__ : Built in command or internal commands are built in to the shell. examples - cd.
     - __External Commands__ : These are executable binaries which are runned by the shell stored in path directories.
 _which <command_name>_ : gives the location of command in PATH variable.

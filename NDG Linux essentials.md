@@ -36,7 +36,10 @@ _env_ shows the list of all available global variables in the system.
 - __type__ -> To know the type of any command : _type <command_name>_ gives the type of command_name.
     - __Internal Commands__ : Built in command or internal commands are built in to the shell. examples - cd.
     - __External Commands__ : These are executable binaries which are runned by the shell stored in path directories.  
+
 _which <command_name>_ : gives the location of command in PATH variable.
+
+-a option with type command gives all the location of that command.
 
 
 - __history__ -> this will provide with the history of the desired commands.  
@@ -49,3 +52,16 @@ _which <command_name>_ : gives the location of command in PATH variable.
     - variable = prince
     - echo "Hello $variable" will show the result as "Hello prince".
 
+- __Aliases__ : Aliases are used to map the longer commands to shorter commands. To know which commmand is aliased to which can be known by command _alias_  
+    - aliases can be setted by providing commands as _alias mycal = "cal 2019".
+    - Now mycal will work same as that of _cal 2019_ command.
+
+Newly created and assigned aliases are only valid until shell is opened in which they are opened. If shell is closed then all the aliases temporarily created will be lost.
+
+- __functions__ : Functions can also be built using existing commands to either create new commands, or to override commands built-in to the shell or commands stored in files. Functions are useful in running multiple commmands at a single run.
+    - my_function(){
+        _cd Documents_
+        _date_
+        _echo "This is test for functions"_
+    }
+    after this we can always call my_function to run all the mentioned command consecutively.\\

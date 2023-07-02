@@ -74,9 +74,9 @@ Newly created and assigned aliases are only valid until shell is opened in which
     - __Back Quotes__ : Back quotes are use to retain the special meaning of a command in the shell. e.g. _echo Hi date_ prints the same while _echo hi `date`_ print hi _todays date_.
 
 
-; can be used to run the multiple commands in a single line example : cd prince ; ls docs ; rm nitish.txt  
-\ can be used with a particular metacharacter to stop it's special interpretation.  
-&& perceived as in the logical manner if first command runs then second command will run or else second will not run.  
-|| perceived as in the logical manner but if first command runs then second runs or else also second command will run.
+* ; can be used to run the multiple commands in a single line example : cd prince ; ls docs ; rm nitish.txt  
+* \ can be used with a particular metacharacter to stop it's special interpretation.  
+* && perceived as in the logical manner if first command runs then second command will run or else second will not run.  
+* || perceived as in the logical manner but if first command runs then second runs or else also second command will run.
 
 

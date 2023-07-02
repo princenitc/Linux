@@ -60,8 +60,8 @@ Newly created and assigned aliases are only valid until shell is opened in which
 
 - __functions__ : Functions can also be built using existing commands to either create new commands, or to override commands built-in to the shell or commands stored in files. Functions are useful in running multiple commmands at a single run.
     - my_function(){
-        \t_cd Documents_
-        \t_date_
-        \t_echo "This is test for functions"_
+        _cd Documents_
+        _date_
+        _echo "This is test for functions"_
     }
     after this we can always call my_function to run all the mentioned command consecutively.\\

@@ -1,4 +1,4 @@
-# Linux
+# Linux command line skills
 
 *  Image magic is a tool which could be used to manupulate the images through programs.
 *  KeypassX can be used to generate and manage the passwords.
@@ -43,7 +43,8 @@ _which <command_name>_ : gives the location of command in PATH variable.
 
 
 - __history__ -> this will provide with the history of the desired commands.  
-    - If you find any command to be used from the hostory then you can call that by _!<command_number>_ this will run the particular command from the history table.  
+    - If you find any command to be used from the hostory then you can call that by _!<command_number>_ this will run the particular command from the history table.
+    - _history <number>_ : show the number of history only.  
     - Also to execute the nth command from the bottom you can type as _!<commmad_position>_.  
     - To execute most recent command type !!
     - To execute the most recent iteration of a particular commmand type _!<command>_.
@@ -77,6 +78,15 @@ Newly created and assigned aliases are only valid until shell is opened in which
 * ; can be used to run the multiple commands in a single line example : cd prince ; ls docs ; rm nitish.txt  
 * \ can be used with a particular metacharacter to stop it's special interpretation.  
 * && perceived as in the logical manner if first command runs then second command will run or else second will not run.  
-* || perceived as in the logical manner but if first command runs then second runs or else also second command will run.
+* || perceived as in the logical manner but if first command runs then second does not runs or else also second command will run.
+* _whoami_ : gives the usename of current user.
+
+- __uname__ : provides the name of current Kernel.
+    - _uname -n_ : gives the network name hostname.
+
+- __pwd__ : prints the current working directory.(print working directory)
+
+
+
 
 

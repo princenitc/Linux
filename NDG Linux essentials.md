@@ -18,6 +18,10 @@
 - -R -> list all the files in the recursive manner (Recursive listing) -- try to use it to samller directory structures.
 - -S -> sorts the result by the size
 - -t -> sorts the result by timestamp (timestamp is the last addition or modification time of the file.)
+- -v -> Verbose prints the confirmation on the completion of the command operation.
+- -n -> no clobber (Do not overwrite a destination file's contents.)
+- -i -> Interactive mode
+
 
 
 All the options can be combined with any of the other irrespective of the order of the combination.

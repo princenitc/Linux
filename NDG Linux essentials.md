@@ -11,8 +11,13 @@
 ### Options
 - -l -> shows the result in the listing format
 - -r -> reverses the result
-- -h -> show the result along with the size of the files  
+- -h -> show the result along with the size of the files(human readable format) 
 - -c -> Gives the count of the result that are shown.
+- -a -> shows all the hidden files also ie file starting from . and ..
+- -d -> list the current working directory.
+- -R -> list all the files in the recursive manner (Recursive listing) -- try to use it to samller directory structures.
+- -S -> sorts the result by the size
+- -t -> sorts the result by timestamp (timestamp is the last addition or modification time of the file.)
 
 
 All the options can be combined with any of the other irrespective of the order of the combination.

@@ -12,6 +12,8 @@
 - -l -> shows the result in the listing format
 - -r -> reverses the result
 - -h -> show the result along with the size of the files  
+- -c -> Gives the count of the result that are shown.
+
 
 All the options can be combined with any of the other irrespective of the order of the combination.
 

@@ -1,0 +1,34 @@
+# Creating Group and Users 
+
+- To view the group configurations. following methods can be used : 
+    - grep pattern filename e.g.  grep root /etc/group
+    - getent database record e.g. getent group root
+- groupadd: command can be executed by the root user to create a new group.
+    - groupadd development - create a group called as development and assigns the group id automatically.
+    - -g option can be used to specify a group id for the new group e.g. groupadd -g 1005 research.
+    - To view the configuration of the the group we can access the /etc/group file e.g. grep development /etc/group.
+    -  -r option which assigns the new group a GID that is less than the lowest standard GID.
+
+- groupmod command can be used to either change the name of a group with the -n option or change the GID for the group with the -g option.
+- As long as the group to be deleted is not a user's primary group, deleting the group is accomplished by using the groupdel command along with the name of the group. i.e. - groupdel clerks
+- __User configuration file__ : 
+    - -D option to the useradd command allows you to view or change some of the default values used by the useradd command. The values shown by useradd -D can also be viewed or updated by manipulating the /etc/default/useradd file.
+    - -g option to the useradd command allows you to use a different primary group than the default when creating a new user account.
+    - To specify a primary group with the useradd command, use the -g option with either the name or GID of the group. example -  _useradd -g users jane_
+    - To make the user a member of one or more supplementary groups, the -G option can be used to specify a comma-separated list of group names or numbers. example - _useradd -G sales,research jane_
+    - Example of useradd command to use in a script - _useradd -u 1009 -g users -G sales,research -m -c 'Jane Doe' jane_
+    - _passwd user_name_ : can be used to change the password of username. where username may have an earlier passwd or not.
+        - _passwd_ : only this command is used to change the password of current user.
+    - __chage__ :  command provides many options for managing the password aging information found in the /etc/shadow file.
+        - Options available for change command are : 
+            - -l : List the account aging information
+            - -d LAST_DAY:	Set the date of the last password change to LAST_DAY
+            - -E EXPIRE_DATE:	Set account to expire on EXPIRE_DATE.
+            - -h:	Show the help for the chage command.
+            - -I INACTIVE:	Set account to permit login for INACTIVE days after password expires.
+            - -m MIN_DAYS:	Set the minimum number of days before the password can be changed to MIN_DAYS.
+            - -M MAX_DAYS:	Set the maximum number of days before a password should be changed to MAX_DAYS.
+            - -W WARN_DAYS:	Set the number of days before a password expires to start displaying a warning to WARN_DAYS.
+    - usermod command offers many options for modifying an existing user account.
+    - userdel :  command is used to delete users. example - _userdel jane_
+    - To delete the user, home directory, and mail spool as well, use the -r option.
